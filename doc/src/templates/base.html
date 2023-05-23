@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style/normalize.css">
+    <link rel="stylesheet" href="../static/style/base.css">
+{% block style %} 
+{% endblock %} 
+</head>
+<body>
+    <nav>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+        <div class="menu"><a href="/">Home</a> | <a href="quemsomos">Quem somos</a> | <a href="contatos">Contatos</a></div>
+    </nav>
+{% block content %} 
+{% endblock %} 
+    <footer>
+        <b>Todos os direitos reservados</b>
+    </footer>
+</body>
+</html>
