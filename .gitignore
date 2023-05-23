@@ -1,2 +1,2 @@
-doc/venv
-*.py
+doc/__pycache__/
+doc/venv/
